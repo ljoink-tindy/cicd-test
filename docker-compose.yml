@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  cicd-test:
+    build: .
+    ports:
+      - "3000:1"
+    environment:
+      - PORT=1
+      - TEST=Test here
